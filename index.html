@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Only</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+			background-color: black;
+        }
+
+
+        .bgpic{
+            position: relative;
+            width: 1903px;
+            height: 250px;
+            opacity: 1;
+          
+        }
+
+
+        .imagedit{
+            width: 100%;
+            height: 120%;
+            display: block;
+            margin-top: 1;
+			filter: brightness(20%);
+        }
+
+
+        .logo{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: auto;
+        }
+
+
+    
+        .title{
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: white;
+            font-family: 'Dancing Script', cursive; 
+        }
+		
+		
+		.bgpic2{
+		    
+            width: 100%; 
+            height: calc(100vh - 250px);
+        } 
+		
+
+        .bgpic2{
+		    position: relative;
+            width: 100%;
+            height: calc(100vh - 250px);
+            
+		}
+			
+        
+        .imagedit2{
+            width: 100%;
+            height: 270%;
+            object-fit: block;
+			filter: brightness(20%);
+        }
+		
+		
+		.picme{
+            position: absolute;
+            top: 150%; 
+            left: 6%;          
+            width: 280px;           
+            border: 2px solid gray; 
+		}
+		
+		
+		 .About{
+            position: absolute;
+            top: 150%; 
+            left: 24%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 1330px; 
+			height: 150%;
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 35px;
+		}
+		
+		
+		.box textarea{
+            width: 98%;
+			height: 91%;
+            padding: 10px;
+            background-color: transparent; 
+            color: white; 
+			border none;
+			word-wrap; break-word;
+			display: inline-block;
+		}
+		
+		
+        .Hobby{
+            position: absolute;
+            top: 320%; 
+            left: 28%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 1330px; 
+			height: 500%;
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+		}
+
+
+        .ho1{         
+		    position: absolute;
+            top: 360%; 
+            left: 31%;          
+            max-width: 780px;		
+			 object-fit: contain;
+			transition: transform 0.3s ease; 
+            z-index: 10;			
+        }		
+		.ho1:hover {
+            transform: scale(1.1);
+		}
+        .ho2{         
+		    position: absolute;
+            top: 540%; 
+            left: 31%;          
+            max-width: 600px;		
+			transition: transform 0.3s ease; 	
+            z-index: 10;			
+        }		
+		.ho2:hover {
+            transform: scale(1.1);
+		}
+		.ho3{         
+		    position: absolute;
+            top: 355%; 
+            left: 75%;          
+            width: 21%;	
+			transition: transform 0.3s ease; 
+            z-index: 10;			
+        }		
+		.ho3:hover {
+            transform: scale(1.1);
+		}
+		.ho4{         
+		    position: absolute;
+            top: 560%; 
+            left: 67.3%;          
+            max-width: 500px;		
+			object-fit: contain;
+			transition: transform 0.3s ease; 	
+            z-index: 10;			
+        }		
+		.ho4:hover {
+            transform: scale(1.1); 
+		}
+		
+		
+		.school{
+            position: absolute;
+            top: 420%; 
+            left: 2%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            border-radius: 8px; 
+            width: 460px; 
+			height: 200%;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 31px;
+		}
+		
+		
+		.Note{
+            position: absolute;
+            top: 640%; 
+            left: 2%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 460px; 
+			height: 40%;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 20px;
+		}
+		
+		
+		.Spcc{
+            position: absolute;
+            top: 315%; 
+            left: 2%;          
+            width: 220px;   
+            color: white;	
+            transition: transform 0.3s ease; 			
+        }		
+
+		.Spcc:hover {
+            transform: scale(1.2); 
+        }
+
+		.Ue{
+            position: absolute;
+            top: 315%; 
+            left: 15%;          
+            width: 220px;   
+            transition: transform 0.3s ease; 
+        }
+
+		.Ue:hover {
+            transform: scale(1.2); 
+        }
+
+
+        .Ach{
+            position: absolute;
+            top: 850%; 
+            left: 3%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 400px; 
+			height: 163%;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+		}
+		
+
+        .WorkExp{
+            position: absolute;
+            top: 850%; 
+            left: 27%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 900px; 
+			height: 120%;
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+		}
+		
+		
+		.SC{         
+		    position: absolute;
+            top: 990%; 
+            left: 29%;          
+            width: 15%;	
+			transition: transform 0.3s ease; 
+            z-index: 10;				
+		}
+		.SC:hover {
+        transform: scale(1.2); 
+		}
+		
+		.EM{         
+		    position: absolute;
+            top: 990%; 
+            left: 49.5%;          
+            width: 22%;	
+			transition: transform 0.3s ease; 
+            z-index: 10;		
+		}
+		.EM:hover {
+        transform: scale(1.2); 
+		}
+		
+		
+		.SU{
+            position: absolute;
+            top: 850%; 
+            left: 77%; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            color: white;
+            width: 400px; 
+			height: 150%;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+		}
+		
+		
+		.Gaming{
+            position: absolute;
+            top: 334%; 
+            left: 46%; 			
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;   
+		}
+		
+		
+		.Reading{
+            position: absolute;
+            top: 510%; 
+            left: 30%; 			
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;     
+		}
+		
+		
+		.Watching{
+            position: absolute;
+            top: 528%; 
+            left: 68.8%; 			
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;       
+		}
+		
+		
+		.Observing{
+            position: absolute;
+            top: 330%; 
+            left: 74%; 			
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+		}
+		
+		
+		.Mot{
+            position: absolute;
+            top: 1230%; 
+            left: 8%;   
+            color: white;
+            width: px; 
+			height: 80;
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 50px;
+			background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+		}
+		
+		
+		.Social{
+            position: absolute;
+            top: 1295%; 
+            left: 8%; 
+            color: white;
+            width: 1290px; 
+			height: 80;
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 30px;
+			border: 2px solid lightblue;
+		    padding: 10px;
+		   
+		}
+		
+		
+		.fb{         
+		    position: absolute;
+            top: 1295%; 
+            left: 79%;          
+            width: 3.7%;
+		}
+		
+		
+		.mail{         
+		    position: absolute;
+            top: 1300%; 
+            left: 42.4%;          
+            width: 4%;
+		}
+		
+		
+		.ring{         
+		    position: absolute;
+            top: 1297%; 
+            left: 71.8%;          
+            width: 3.3%;
+		}
+		
+		
+		.Click{
+            position: absolute;
+            top: 26%; 
+            left: 90%; 
+            width: 500px; 
+            text-align: justify;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 20px;					    
+		}
+		
+		
+    </style>
+</head>
+<body>
+   
+    <div class="bgpic">       
+        <img src="bg2.jpg" class="imagedit" alt="Background Image">   		
+        <img src="newh.png" class="logo" alt="Logo">
+    <div class="title">Harry's Domain</div>
+		
+	<div class="bgpic2">
+        <img src="bg1.jpg" class="imagedit2">
+	    </div>
+		
+	<div>
+    <img src="mypfp.png" class="picme">	
+	<img src="Game.jpg" class="ho1">	
+	<img src="Read.jpg" class="ho2">	
+	<img src="Stare.jpg" class="ho3">	
+	<img src="Anime.jpg" class="ho4">	
+	<img src="SPCC.png" class="Spcc">	
+	<img src="UE.png" class="Ue">	
+	<img src="work2.png" class="SC">	
+	<img src="work.jpg" class="EM">	
+	<img src="fb.png" class="fb">	
+	<img src="mail.jpg" class="mail">	
+	<img src="ringring.png" class="ring">	
+    </div>
+	
+	<div class="About">
+	     <div class="fixed-text" style="font-size: 50px; text-align: left;">About Me:</div> 
+
+        My name is Sarraga, Harry Andrew G. My goal is to become a highly skilled IT professional with a strong desire to ensure that my efforts are rewarded. 
+		<br> </br>
+		Who I  was back then. I used to be stupid, lazy, and ignorant, but as I've grown, I've changed and am now working toward becoming the best version of myself. 
+		My current objective is to become an excellent IT specialist who can also help out with the family and acquire a variety of other skills.
+	</div>
+	
+	<div class="Hobby">
+	     <div class="fixed-text" style="font-size: 50px; text-align: left;">My Hobby:</div> 
+    <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br> <br> </br>  <br> </br>   
+	My first hobby is probably playing video games, which I'm very good at and occasionally manage to get really good K/D/A.
+	My second favorite hobby is reading comics because it's a good way to waste time, and I enjoy fantasy with action, which is mostly Korean type of comics. 
+	Next hobby is seeing beautiful things, like scenery, also helps me feel better. Finally, I enjoy watching movies and anime.
+	</div>
+	
+	<div class="school">    
+		<div class="fixed-text" style="font-size: 43px; text-align: left; color: darkgreen;">Education:</div> 
+ 		 <span style="color: darkgreen;">Elementary</span> <br> 
+		 <span style="color: blue;">Systems Plus Computer College</span>
+         <br> </br> 
+		 <span style="color: darkgreen;">Senior High</span> <br> 
+		 <span style="color: blue;">Systems Plus Computer College</span>
+		 <br> </br> 
+		 <span style="color: darkgreen;">Junior High</span> <br> 
+		 <span style="color: blue;">Systems Plus Computer College</span>
+		 <br> </br> 
+		 <span style="color: darkgreen;">College</span> <br> 
+		 <span style="color: red;">University Of The East</span>
+	</div>
+	
+	<div class="Note">
+	     <div class="fixed-text" style="font-size: 25px; text-align: left; color: yellow;">Note about this person:</div> 
+		Very quiet, Friendly and have many secrets yet to uncover 
+    </div>		 
+	
+    <div class="Ach">
+	     <div class="fixed-text" style="font-size: 40px; text-align: center; color: yellow;">Achievements:</div> <br>
+
+        <span style="color: Blue;">Grade 10</span> <br>
+		<span style="color: yellow;">With Honors</span>
+		<br> </br>
+		<span style="color: Blue;">Grade 11</span> <br>
+		<span style="color: yellow;">With Honors</span>
+		<br> </br>
+		<span style="color: Blue;">Grade 12</span> <br>
+		<span style="color: yellow;">With Honors</span>
+		<br> </br>
+	</div>
+	
+	<div class="WorkExp">
+	     <div class="fixed-text" style="font-size: 40px; text-align: left;">Work Experience:</div> <br>
+		 Company/Business Name: Stitch & Go Embroidery <br>
+         Role: Trimmer & Cleaner 2018 
+		 <br> </br>
+		 Company/Business Name: Systems Plus Computer College <br>
+         Role: Assistance in Student Enrolling 2023
+	</div>
+	
+	<div class="SU">
+	     <div class="fixed-text" style="font-size: 50px; text-align: center; color: orange;">Skill list:</div> 
+		<span style="color: yellow;"> Adaptability <br> Patience <br> Computer Literacy <br> Digital Literacy <br> Decision Making <br> Emotional Stability <br> Self Control <br> Resilience </span>
+    </div>	
+	
+	
+	<div class="Gaming">
+	     <div class="fixed-text" style="font-size: 35px; text-align: left; color: White;">Playing Games</div> 
+    </div>
+	<div class="Reading">
+	     <div class="fixed-text" style="font-size: 35px; text-align: left; color: White;">Reading  Japanese & Korean Mangas </div> 
+    </div>
+	<div class="Watching">
+	     <div class="fixed-text" style="font-size: 35px; text-align: left; color: White;">Watching Anime/Movies</div> 
+	</div>	
+    <div class="Observing">
+	     <div class="fixed-text" style="font-size: 30px; text-align: left; color: White;">Looking at Beautiful Scenery</div>  
+    </div>
+	
+	<div class="Mot">
+	     <div class="fixed-text" style="font-size: 70px; text-align: Center;">Motto: </div> 
+	     In this life I shall paint it with different colors instead of black and white 
+	</div>
+	
+	<div class="Social">
+	    <div class="fixed-text" style="font-size: 40px; text-align: ;">Socials:
+        <a href="mailto:harrysarraga@gmail.com" style="color: lightblue; text-decoration: none;">harrysarraga@gmail.com</a> 
+		<span style="color: white; margin-left: 150px;"> Number: <a href="tel:+09150720898" style="color: lightblue; text-decoration: none;">09150720898</a>
+	</div> 
+	
+	<div class="Click">
+	<a href="https://www.facebook.com/harryandrew.sarraga/" style="color: lightblue; margin-left: 250px;"> Click me: </a>
+	</div>
+	
+</body>
+</html>
